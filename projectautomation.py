@@ -13,7 +13,7 @@ from pynput.keyboard import Key, Controller
 keyboard = Controller()
 options = webdriver.ChromeOptions()
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
-driver = webdriver.Chrome(options=options ,executable_path='C:/Users/user/Documents/New Folder/webdriver2/chromedriver.exe')
+driver = webdriver.Chrome(options=options ,executable_path='../webdriver2/chromedriver.exe')
 driver.get("https://github.com/login")
 
 inputElement = driver. find_element_by_xpath("//*[@id='login_field']")
